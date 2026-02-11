@@ -49,6 +49,27 @@
         margin: 0px;
     }
 
+    header .sticky {
+      position: sticky;
+      width: 100%;
+
+      padding: 15px 0;
+      
+    }
+
+    header.sticky img {
+        width: 60px;
+    }
+
+    header.sticky h1 {
+      font-size: 20px;
+      margin: 0 20px;
+    }
+
+    header.sticky p {
+      font-size: 12px;
+    }
+
     /********** Container ************/
     .container {
       display: inline-block;
@@ -172,25 +193,36 @@
 /**************** Segunda Noticia *********/
 
     .dos-noticias {
-      display: block;
-
-      width: 45%;
+      width: 100%;
     }
+    
+    .dos-noticias .noticia{
+      width: 48%;
+      vertical-align: top;
 
-
+      box-sizing: border-box;
+    }
 
  /**************** Tercera Noticia *********/
-    .bloque-final {
-      display: block;
-
-      width: 55%;
-    }
-
-    .derecha {
-      display: grid;
+  
+    .bloque-final .noticia{
+      display: inline-block;
       
-      gap: 20px;
+      width: 49%;
+
     }
+
+    .derecha{
+      display: inline-block;
+      width: 49%;
+    }
+
+    .derecha .noticia{
+      width: 99%;
+
+    }
+
+
 
 
     /*** footer ***/
@@ -207,6 +239,9 @@ footer{
   font-size: 6px;
 }
 
+
+
+
     /*************************** Elementos repetidos */
 nav, aside, .noticia{
   background-color: #1b2215;
@@ -218,3 +253,10 @@ nav, aside{
 }
 
   /*************************** Elementos repetidos */
+
+
+  header img:hover{
+
+    background-image: url()
+
+  }
