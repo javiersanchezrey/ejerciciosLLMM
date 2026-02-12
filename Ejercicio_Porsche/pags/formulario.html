@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario</title>
+
+</head>
+<body>
+
+    <form action="index.html" method="get">
+
+        <label>Nombre</label>
+        <input type="text" name="nombre" required>
+
+        
+        <label>Apellidos</label>
+        <input type="text" name="apellidos" required>
+
+       
+        <label>DNI</label>
+        <input type="text" name="dni"
+        pattern="[0-9]{8}[A-Z]"
+        title="Debe contener 8 dígitos y una letra mayúscula al final"
+        required>
+
+        
+        <label>Dirección</label>
+        <input type="text" name="direccion"
+        pattern="C\/[A-Za-z]+ Nº[0-9]+ P[A-Za-z]"
+        title='Formato: C/NombreCalle Nº12 PA'
+        required>
+
+        
+        <label>Ciudad</label>
+        <input type="text" name="ciudad" required>
+
+        
+        <label>Código Postal</label>
+        <input type="text" name="cp"
+        list="codigos"
+        pattern="[0-9]{5}"
+        title="Debe contener 5 dígitos"
+        required>
+
+        <datalist id="codigos">
+            <option value="10001">
+            <option value="28001">
+            <option value="41001">
+            <option value="08001">
+            <option value="15001">
+        </datalist>
+
+        
+        <label>País</label>
+        <input type="text" name="pais" required>
+
+       
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="fecha">
+
+        
+        <label>Email</label>
+        <input type="email" name="email"
+        placeholder="correo@correo.es">
+
+        
+        <label>Contraseña</label>
+        <input type="password" name="password"
+        pattern="^_[A-Za-z]{1,7}_[A-Za-z0-9]{5}&[0-9]{2}$"
+        title='Formato: _Max7Letras_5letrasONumeros&2num'
+        required>
+
+        
+        <label>Sexo</label>
+        <select name="sexo" required>
+        <option value="">Seleccione</option>
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+        <option value="otro">Otro</option>
+        </select>
+
+        
+        <label>Aficiones</label>
+        <input type="checkbox" name="aficiones" value="Deporte"> Deporte<br>
+        <input type="checkbox" name="aficiones" value="Música"> Música<br>
+        <input type="checkbox" name="aficiones" value="Cine"> Cine<br>
+        <input type="checkbox" name="aficiones" value="Viajar"> Viajar<br>
+        <input type="text" name="otra_aficion" placeholder="Otra afición">
+
+        
+        <label>Foto de perfil</label>
+        <input type="file" name="foto" accept="image/*">
+
+        
+        <div class="botones">
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="window.location.href='index.html'">Cancelar</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
