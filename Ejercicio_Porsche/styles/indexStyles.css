@@ -19,49 +19,11 @@
     header {
       height: 100vh;
 
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-
-      background-image: url('../img/foto\ principal.avif');
+      background-image: url('../img/historia\ Porsche\ 911.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     } 
-
-    header img {
-      width: 19%;
-      margin-right: 10%;
-    }
-
-    header h1 {
-      font-size: 50px;
-
-      color: #b61414c4;
-
-      margin-right: 17%;
-      margin-left: 4%;
-    }
-
-    header p{
-        margin: 0px;
-    }
-
-    header .sticky {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      gap: 80px;
-
-      transition: all 0.3s ease;
-    }
 
     .posicionamiento-titulo a{
         display: flex;
@@ -78,7 +40,8 @@
       width: 30%;
     }
 
-    /********** Container ************/
+    /** Primera seccions**/
+
     .container {
       display: inline-block;
 
@@ -99,6 +62,54 @@
     color: #eee5c9;
 
     font-weight: bold;
+    }
+
+
+    /** Segunda seccion **/
+
+    .segunda-seccion .noticia{
+      display: inline-block;
+    
+      width: 49%;
+    }
+
+    .segunda-seccion .derecha {
+      display: inline-block;
+      width: 49%;
+
+      vertical-align: top;
+        padding-top: 10%;
+    }
+
+    .derecha .noticia{
+      width: 99%;
+    }
+
+    .segunda-seccion .derecha p , .segunda-seccion .derecha h3, .segunda-seccion .derecha a{
+        color: #1b2215;
+    }
+
+    /** Tercera seccion **/
+
+    .bloque-final{
+padding-top: 20px;
+
+    }
+
+    .bloque-final .noticia{
+      display: inline-block;
+      
+      width: 49%;
+    }
+
+    .derecha{
+      display: inline-block;
+        width: 49%;
+            padding-left: 50px;
+    }
+
+    .derecha .noticia{
+      width: 98%;
     }
 
     /*********** Nav***/
@@ -158,14 +169,7 @@
       margin-top: 10px;
     }
  
-    /**************** Seccion Principal *********/
-    main {
-      display: block;
-    }
-
-    /**************** Primera Noticia *********/
-
-    .noticia {
+ .noticia {
       display: inline-block;
 
       padding: 15px;
@@ -176,10 +180,6 @@
     .noticia h2, h3{
         text-align: center;
         padding: 20px 0px;
-    }
-
-    .noticia h2,h3, figcaption ,p{
-        color: #eee5c9;
     }
 
     .noticia img {
@@ -197,36 +197,6 @@
       text-align: right;
     }
 
-/**************** Segunda Noticia *********/
-
-    .dos-noticias {
-      width: 100%;
-    }
-    
-    .dos-noticias .noticia{
-      width: 48%;
-      vertical-align: top;
-
-      box-sizing: border-box;
-    }
-
- /**************** Tercera Noticia *********/
-  
-    .bloque-final .noticia{
-      display: inline-block;
-      
-      width: 49%;
-    }
-
-    .derecha{
-      display: inline-block;
-        width: 49%;
-        padding-left: 50px;
-    }
-
-    .derecha .noticia{
-      width: 82%;
-    }
 
     /*** footer ***/
 footer{
@@ -242,51 +212,18 @@ footer{
   font-size: 6px;
 }
 
+      /*************************** Elementos repetidos */
+    .noticia h2,h3, p{
+        color: #eee5c9;
+    }
+
+     nav, aside, .noticia{
+        background-color: #1b2215;
+    }
+
+    nav, aside{
+        position: sticky;
+        top: 20px;
+    }
+
   /*************************** Elementos repetidos */
-nav, aside, .noticia{
-  background-color: #1b2215;
-}
-
-nav, aside{
-    position: sticky;
-      top: 20px;
-}
-
-  /*************************** Elementos repetidos */
-
-
-  /************************************************/
-
-/***FORMULARIO*****/
-
-form {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-input, select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-}
-
-.botones {
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-between;
-}
-
-button {
-  padding: 10px 20px;
-  cursor: pointer;
-}
