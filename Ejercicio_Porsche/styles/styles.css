@@ -186,6 +186,10 @@
       width: 100%;
     }
 
+    .noticia > a{
+        padding-top: 15px;
+    }
+
     .noticia a:hover{
         border: #eee5c9 1px dotted;
         padding: 1px;
@@ -212,20 +216,26 @@
 
  /**************** Tercera Noticia *********/
   
+    .bloque-final{
+      padding-top: 15px;
+
+    }
+    
     .bloque-final .noticia{
       display: inline-block;
-      
-      width: 49%;
+        width: 49%;
+
+        padding-top: 20px;
     }
 
     .derecha{
       display: inline-block;
         width: 49%;
-        padding-left: 50px;
+        padding-left: 20px;
     }
 
     .derecha .noticia{
-      width: 82%;
+      width: 84%;
     }
 
     /*** footer ***/
@@ -257,36 +267,3 @@ nav, aside{
 
   /************************************************/
 
-/***FORMULARIO*****/
-
-form {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-input, select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-}
-
-.botones {
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-between;
-}
-
-button {
-  padding: 10px 20px;
-  cursor: pointer;
-}
