@@ -1,0 +1,229 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    body {
+      background-color: #eee5c9;
+      text-align: center;
+
+      align-items: top;
+    }
+
+  /** header **/
+    header {
+      height: 100vh;
+
+      background-image: url('../img/historia\ Porsche\ 911.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+
+    .posicionamiento-titulo a{
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .posicionamiento-titulo img{
+      position: fixed;
+      top: 25px;
+      z-index: 1000;
+
+      width: 30%;
+    }
+
+    /** Primera seccions**/
+
+    .container {
+      display: inline-block;
+
+      vertical-align: top;
+
+      width: 70%;
+
+      padding: 20px;
+      
+      margin: 0 auto;
+    }
+
+    .container a{  
+    text-decoration: none;
+
+    margin-top: 5px;
+    
+    color: #eee5c9;
+
+    font-weight: bold;
+    }
+
+
+    /** Segunda seccion **/
+
+    .segunda-seccion .noticia{
+      display: inline-block;
+    
+      width: 49%;
+    }
+
+    .segunda-seccion .derecha {
+      display: inline-block;
+      width: 49%;
+
+      vertical-align: top;
+        padding-top: 5%;
+    }
+
+    .derecha .noticia{
+      width: 99%;
+    }
+
+    .segunda-seccion .derecha p , .segunda-seccion .derecha h3, .segunda-seccion .derecha a{
+        color: #1b2215;
+    }
+
+    /** Tercera seccion **/
+
+    .bloque-final{
+      padding-top: 20px;
+
+    }
+
+    .bloque-final .noticia{
+      display: inline-block;
+      
+      width: 49%;
+    }
+
+    .derecha{
+      display: inline-block;
+        width: 49%;
+            padding-left: 50px;
+    }
+
+    .derecha .noticia{
+      width: 98%;
+    }
+
+    /*********** Nav***/
+    nav {
+      display: inline-block;
+      width: 10%;
+
+      vertical-align: top;
+
+      text-align: left;
+
+      padding: 15px;
+
+      margin-top: 20px;
+
+      height: fit-content;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-bottom: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #eee5c9;
+      font-weight: bold;
+    }
+
+    nav a:hover{
+        border: #eee5c9 1px dotted;
+        padding: 1px;
+    }
+
+/******** Aside******/
+    aside {
+      display: inline-block;
+      width: 15%;
+
+      vertical-align: top;
+      margin-top: 20px;
+
+      padding: 10px;
+
+      height: fit-content;
+
+      text-align: center;
+
+      font-size: 9px;
+    }
+
+    aside img {
+      width: 100%;
+      margin-top: 10px;
+    }
+ 
+ .noticia {
+      display: inline-block;
+
+      padding: 15px;
+
+      margin: 7px;
+    }
+
+    .noticia h2, h3{
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .noticia img {
+      width: 100%;
+    }
+
+    .noticia a:hover{
+        border: #eee5c9 1px dotted;
+        padding: 1px;
+    }
+
+    .noticia figcaption{
+      font-size: 10px;
+      color: #f30b0bdc;
+      text-align: right;
+    }
+
+
+    /*** footer ***/
+    footer{
+      background-color: #1b2215;
+      padding: 10px 0px;
+
+        position:  sticky;
+          bottom: 0px;
+    }
+
+    .derechos_reservados{
+      color: #36472691;
+      font-size: 6px;
+    }
+
+      /*************************** Elementos repetidos */
+    .noticia h2,h3, p{
+        color: #eee5c9;
+    }
+
+     nav, aside, .noticia{
+        background-color: #1b2215;
+    }
+
+    nav, aside{
+        position: sticky;
+        top: 20px;
+    }
+
+  /*************************** Elementos repetidos */

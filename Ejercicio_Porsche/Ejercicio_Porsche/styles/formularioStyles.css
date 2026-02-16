@@ -1,0 +1,205 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+    
+    body {
+        background-color: #eee5c9;
+        text-align: center;
+
+        align-items: top;
+
+        background-image:url("../img/historia\ Porsche\ 911.jpg");
+            background-repeat: no-repeat;
+            background-position: fixed;
+            background-size: 100%;
+    }
+
+    .posicionamiento-titulo a{
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .posicionamiento-titulo img{
+      position: fixed;
+      top: 25px;
+      z-index: 1000;
+
+      width: 30%;
+    }
+
+    .container{
+    padding-top: 4%;
+        padding-bottom: 2%;
+
+        width:100%;
+        height:100vh;
+    }
+
+/******* Seccion Izquierda ****/
+    .izquierda{
+        display:inline-block;
+        
+        width: 35%;
+        height: 100%;
+
+        background-image: url("../img/Porshce-Formulario.webp");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        
+        vertical-align: top;
+        
+        text-align: center;
+            color: #fff;
+
+        margin-right: 12%;
+
+        border-radius: 10px;
+    }
+
+    .izquierda img{
+        width: 80%;
+    }
+
+    .texto-izquierda{
+        font-size: 45px;
+            font-weight: bold;
+
+        text-align: center;
+
+        padding-top: 50%;
+    }
+
+/******* Seccion Derecha ****/
+    .derecha{
+        display: inline-block;
+
+        width: 50%;
+        height: 100%;
+
+        background-color: #1e6b6b36;
+
+        vertical-align: top;
+
+        padding: 50px;
+
+        color: #fff;
+
+        border-radius: 10px;
+    }
+
+    .contenedor-formulario{
+        max-width:700px;
+
+        margin:auto;
+    }
+
+    h2{
+        margin-bottom:25px;
+        color: #f30b0bdc;
+    }
+
+    .fila{
+        margin-bottom: 25px;
+    }
+
+    .mitad{
+        display:inline-block;
+        width: 47%;
+    }
+
+    .mitad:first-child{
+        margin-right: 4%;
+    }
+
+    .fila-completa{
+        display:block;
+        width:100%;
+    }
+
+
+    input, select{
+        width:100%;
+        
+        padding:10px;
+        
+        border:none;
+        border-radius:4px;
+        
+        font-size:14px;
+    }
+
+/******* Aficiones ****/
+    .grupo-aficiones{
+        margin-top:10px;
+    }
+
+    .grupo-aficiones input{
+        width: auto;
+        margin-right: 5px;
+    }
+
+/******* Botones ****/
+    .botones{
+        margin-top: 20px;
+    }
+
+    button{
+        padding: 10px 20px;
+
+        border: none;
+            border-radius: 4px;
+
+        cursor: pointer;
+
+        margin-right: 10px;
+
+        font-weight: bold;
+    }
+
+    button[type="submit"]{
+        background:#fff;
+            color:#f30b0bdc;
+    }
+
+    button[type="reset"]{
+        background:#f30b0bdc;
+            color:#fff;
+    }
+
+    button[type="button"]{
+        background:#fff;
+            color:#f30b0bdc;
+    }
+
+        button[type="submit"]:hover, button[type="button"]:hover{
+            background:#f30b0bdc;
+                color:#fff;
+        }
+
+        button[type="reset"]:hover{
+            background:#fff;
+                color:#f30b0bdc;
+        }
+
+            /*** footer ***/
+    footer{
+        background-color: #1b2215;
+
+        padding: 10px 0px;
+
+        position:  sticky;
+            bottom: 0px;
+    }
+
+    .derechos_reservados{
+    color: #36472691;
+        font-size: 6px;
+    }

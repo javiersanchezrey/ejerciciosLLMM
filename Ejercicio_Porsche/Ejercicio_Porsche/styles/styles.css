@@ -1,0 +1,288 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    body {
+      background-color: #eee5c9;
+      text-align: center;
+
+      align-items: top;
+    }
+
+  /** header **/
+    header {
+      height: 100vh;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      background-image: url('../img/foto\ principal.avif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+
+    header img {
+      width: 19%;
+      margin-right: 10%;
+    }
+
+    header h1 {
+      font-size: 50px;
+
+      color: #b61414c4;
+
+      margin-right: 17%;
+      margin-left: 4%;
+    }
+
+    header p{
+        margin: 0px;
+    }
+
+    header .sticky {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 80px;
+
+      transition: all 0.3s ease;
+    }
+
+    .posicionamiento-titulo a{
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .posicionamiento-titulo img{
+      position: fixed;
+      top: 25px;
+      z-index: 1000;
+
+      width: 30%;
+    }
+
+    /********** Container ************/
+    .container {
+      display: inline-block;
+
+      vertical-align: top;
+
+      width: 70%;
+
+      padding: 20px;
+      
+      margin: 0 auto;
+    }
+
+    .container a{  
+    text-decoration: none;
+
+    margin-top: 5px;
+    
+    color: #eee5c9;
+
+    font-weight: bold;
+    }
+
+    /*********** Nav***/
+    nav {
+      display: inline-block;
+      width: 10%;
+
+      vertical-align: top;
+
+      text-align: left;
+
+      padding: 15px;
+
+      margin-top: 20px;
+
+      height: fit-content;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-bottom: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #eee5c9;
+      font-weight: bold;
+    }
+
+    nav a:hover{
+        border: #eee5c9 1px dotted;
+        padding: 1px;
+    }
+
+/******** Aside******/
+    aside {
+      display: inline-block;
+      width: 15%;
+
+      vertical-align: top;
+      margin-top: 20px;
+
+      padding: 10px;
+
+      height: fit-content;
+
+      text-align: center;
+
+      font-size: 9px;
+    }
+
+    aside img {
+      width: 100%;
+      margin-top: 10px;
+    }
+ 
+    /**************** Seccion Principal *********/
+    main {
+      display: block;
+    }
+
+    /**************** Primera Noticia *********/
+
+    .noticia {
+      display: inline-block;
+
+      padding: 15px;
+
+      margin: 7px;
+    }
+
+    .noticia h2, h3{
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .noticia h2,h3, figcaption ,p{
+        color: #eee5c9;
+    }
+
+    .noticia img {
+      width: 100%;
+    }
+
+    .noticia > a{
+        padding-top: 15px;
+    }
+
+    .noticia a:hover{
+        border: #eee5c9 1px dotted;
+        padding: 1px;
+    }
+
+    .noticia figcaption{
+      font-size: 10px;
+      color: #f30b0bdc;
+      text-align: right;
+    }
+
+/**************** Segunda Noticia *********/
+
+    .dos-noticias {
+      width: 100%;
+    }
+    
+    .dos-noticias .noticia{
+      width: 48%;
+      vertical-align: top;
+
+      box-sizing: border-box;
+    }
+
+ /**************** Tercera Noticia *********/
+  
+    .bloque-final{
+      padding-top: 15px;
+
+    }
+    
+    .bloque-final .noticia{
+      display: inline-block;
+        width: 49%;
+
+        padding-top: 20px;
+    }
+
+    .derecha{
+      display: inline-block;
+        width: 49%;
+        padding-left: 20px;
+    }
+
+    .derecha .noticia{
+      width: 84%;
+    }
+
+    /**************** Cuarta Noticia *********/
+    .carrusel {
+      width: 75%;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .deslizar {
+      display: flex;
+      scroll-snap-type: x mandatory;
+      overflow-x: auto;
+    }
+
+    .deslizar img {
+      width: 100%;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+    }
+
+    /*** footer ***/
+footer{
+  background-color: #1b2215;
+  padding: 10px 0px;
+
+    position:  sticky;
+      bottom: 0px;
+}
+
+.derechos_reservados{
+  color: #36472691;
+  font-size: 6px;
+}
+
+  /*************************** Elementos repetidos */
+nav, aside, .noticia{
+  background-color: #1b2215;
+}
+
+nav, aside{
+    position: sticky;
+      top: 20px;
+}
+
+  /*************************** Elementos repetidos */
+
+
+  /************************************************/
+
