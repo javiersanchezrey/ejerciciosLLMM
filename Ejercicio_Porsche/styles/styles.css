@@ -1,50 +1,38 @@
-
   /** header **/
-    header {
+   header {
+      position: relative;
       height: 100vh;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
-      text-align: center;
 
-      background-image: url('../img/foto\ principal.avif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    } 
-
-    header img {
-      width: 19%;
-      margin-right: 10%;
+      gap: 30px;
+      overflow: hidden;
+    }
+    
+   .contenido-header img {
+      width: 50%;
     }
 
-    header h1 {
+    .contenido-header h1 {
       font-size: 50px;
-
       color: #b61414c4;
-
-      margin-right: 17%;
-      margin-left: 4%;
+      margin: 0px;
     }
 
-    header p{
-        margin: 0px;
+    /********** video Header ************/
+    .contenedor-video {
+      position: absolute;
+        top: 0;
+        left: 0;
+
+      width: 100%;
+        z-index: -1;
     }
 
-    header .sticky {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      gap: 80px;
-
-      transition: all 0.3s ease;
+    .contenedor-video video {
+      width: 100%;
     }
 
     /********** Container ************/
@@ -148,29 +136,4 @@
 
     .derecha .noticia{
       width: 84%;
-    }
-
-     /**************** Boton *********/
-    .boton-pagina-principal{
-      text-align: right;
-
-            position:  sticky;
-          bottom: 55px;
-    }
-
-    .boton-pagina-principal a{
-      text-decoration: none;
-    }
-
-    .boton-pagina-principal img{
-      width: 7%;
-      margin-bottom: -45px;
-    }
-
-    .boton-pagina-principal figcaption{
-      font-size: 8px;
-      color: #f30b0bdc;
-
-        margin-right: 25px;
-        margin-bottom: 10px;
     }

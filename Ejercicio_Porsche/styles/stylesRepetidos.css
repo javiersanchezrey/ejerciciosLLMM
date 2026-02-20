@@ -140,3 +140,28 @@ footer{
   color: #36472691;
   font-size: 6px;
 }
+
+     /**************** Boton *********/
+    .boton-pagina-principal{
+      text-align: right;
+
+            position:  sticky;
+          bottom: 55px;
+    }
+
+    .boton-pagina-principal a{
+      text-decoration: none;
+    }
+
+    .boton-pagina-principal img{
+      width: 7%;
+      margin-bottom: -45px;
+    }
+
+    .boton-pagina-principal figcaption{
+      font-size: 8px;
+      color: #f30b0bdc;
+
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
